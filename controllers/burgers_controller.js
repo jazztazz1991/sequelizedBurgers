@@ -23,7 +23,6 @@ router.post("/burgers/insertOne", function(req, res) {
 
 router.put("/burgers/updateOne/:id", function(req, res) {
     var newBurger = req.body;
-    console.log("================================" + req.params.id);
 	db.Burger.update(
     {
 		devoured: newBurger.devoured
