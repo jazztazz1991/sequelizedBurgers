@@ -6,9 +6,10 @@ var router = express.Router();
 var db = require("../models");
 
 router.get('/', function(req, res) {
-	db.Burger.findAll({}).then(function(data){ 
-		res.render("index",{burger: data});
-    });
+    res.redirect("http://www.cnn.com/");
+//	db.Burger.findAll({}).then(function(data){ 
+//		res.render("index",{burger: data});
+//    });
 });
 
 router.post("/burgers/insertOne", function(req, res) {
